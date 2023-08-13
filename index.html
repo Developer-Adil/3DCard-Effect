@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>3d Card - Developer_adil</title>
+</head>
+
+<body>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="card">
+        <img src="port.jpg" alt="logo">
+        <h1>Developer Adil</h1>
+        <span class="text1">A Web developer and video editor</span>
+        <div class="line"></div>
+        <div class="text2">
+            I am a web developer and a video editor too. If you want my projects you can join my telegram channel for source codes.
+        </div>
+        <a href="#" class="btn">Message Me <i> &#9829;</i></a>
+        <div class="tags">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 20,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+        });
+        VanillaTilt.init(document.querySelector(".card img"), {
+            max: 50,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5
+        });
+    </script>
+
+</body>
+
+</html>
